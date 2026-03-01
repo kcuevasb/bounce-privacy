@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Política de Privacidad — Bounce</title>
-<style>
-  body{font-family:sans-serif;max-width:600px;margin:40px auto;padding:0 20px;color:#333;line-height:1.7;}
-  h1{color:#00ffcc;}h2{color:#333;margin-top:32px;}
-  footer{margin-top:40px;font-size:0.8rem;color:#999;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — Bounce</title>
+  <style>
+    body{font-family:sans-serif;max-width:600px;margin:40px auto;padding:0 20px;color:#333;line-height:1.7;}
+    h1{color:#00ffcc;}h2{color:#333;margin-top:32px;}
+    footer{margin-top:40px;font-size:0.8rem;color:#999;}
+  </style>
 </head>
 <body>
 <h1>BOUNCE</h1>
 <h2>Política de Privacidad</h2>
-<p>Última actualización: 27 de febrero de 2025</p>
+<p>Última actualización: 1 de marzo de 2026</p>
 
 <h2>1. Información que recopilamos</h2>
-<p>Bounce no recopila, almacena ni comparte ningún dato personal del usuario. La aplicación funciona completamente sin conexión y no requiere registro ni cuenta de usuario.</p>
+<p>Bounce puede recopilar los siguientes datos cuando el usuario decide crear un perfil o iniciar sesión con Google:</p>
+<ul>
+  <li><strong>Nombre de usuario</strong> elegido por el jugador (permanente una vez establecido)</li>
+  <li><strong>Foto de perfil</strong> de la cuenta de Google, si el usuario inicia sesión con Google</li>
+  <li><strong>Dirección de correo electrónico</strong>, únicamente si el usuario inicia sesión con Google</li>
+  <li><strong>Puntuaciones y récords</strong> para los rankings globales</li>
+  <li><strong>Progreso de desafíos diarios</strong> y racha de días consecutivos</li>
+</ul>
+<p>El uso de cuenta es completamente opcional. La aplicación puede usarse de forma anónima sin proporcionar ningún dato personal.</p>
 
 <h2>2. Datos almacenados localmente</h2>
-<p>La aplicación guarda únicamente en el dispositivo del usuario:</p>
+<p>Con independencia de si el usuario tiene cuenta, la app guarda en el dispositivo:</p>
 <ul>
-  <li>Puntuación máxima personal</li>
-  <li>Historial de partidas</li>
-  <li>Preferencias y ajustes</li>
-  <li>Progreso de desafíos diarios</li>
+  <li>Puntuación máxima personal e historial de partidas</li>
+  <li>Monedas y mejoras adquiridas en la tienda</li>
+  <li>Preferencias de idioma y ajustes</li>
+  <li>Cola de sincronización offline (puntuaciones pendientes de subir)</li>
 </ul>
-<p>Estos datos nunca salen del dispositivo y no son accesibles por el desarrollador ni por terceros.</p>
 
-<h2>3. Permisos</h2>
-<p>Bounce solicita únicamente el permiso de vibración (VIBRATE) para el feedback táctil. No se solicita acceso a cámara, micrófono, contactos ni ubicación.</p>
+<h2>3. Datos almacenados en la nube</h2>
+<p>Si el usuario crea un perfil o inicia sesión con Google, los siguientes datos se almacenan en Firebase Firestore (Google Cloud):</p>
+<ul>
+  <li>Nombre de usuario y avatar seleccionado</li>
+  <li>Foto de perfil de Google (URL)</li>
+  <li>Puntuaciones para los rankings diario, semanal, mensual y global</li>
+  <li>Fecha de última partida y mejor puntuación</li>
+</ul>
+<p>Estos datos son necesarios para el funcionamiento de los rankings en tiempo real y la sincronización entre dispositivos.</p>
 
-<h2>4. Servicios de terceros</h2>
-<p>Bounce no integra ningún SDK de terceros, red publicitaria, servicio de analítica ni herramienta de seguimiento.</p>
+<h2>4. Uso offline y sincronización</h2>
+<p>Bounce funciona completamente sin conexión a internet. Las partidas jugadas sin conexión se guardan localmente y se sincronizan con los rankings en la nube de forma automática en cuanto el dispositivo recupera la conexión.</p>
 
-<h2>5. Menores de edad</h2>
-<p>Bounce es apto para todas las edades. No recopilamos datos de ningún usuario, incluidos menores de edad.</p>
+<h2>5. Permisos</h2>
+<p>Bounce solicita los siguientes permisos en Android:</p>
+<ul>
+  <li><strong>VIBRATE</strong> — para feedback táctil durante el juego</li>
+  <li><strong>INTERNET</strong> — para sincronización con Firebase y login con Google</li>
+</ul>
+<p>No se solicita acceso a cámara, micrófono, contactos, ubicación ni almacenamiento externo.</p>
 
-<h2>6. Contacto</h2>
-<p>Para cualquier consulta: <a href="mailto:srspecialk@gmail.com">srspecialk@gmail.com</a></p>
+<h2>6. Servicios de terceros</h2>
+<p>Bounce utiliza los siguientes servicios de Google:</p>
+<ul>
+  <li><strong>Firebase Authentication</strong> — para el inicio de sesión con Google y gestión de sesiones anónimas</li>
+  <li><strong>Firebase Firestore</strong> — base de datos en la nube para perfiles y rankings</li>
+  <li><strong>Firebase Hosting</strong> — para servir la aplicación web</li>
+</ul>
+<p>Estos servicios están sujetos a la <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidad de Google</a>. No se integra ninguna red publicitaria, servicio de analítica ni herramienta de seguimiento de terceros.</p>
 
-<footer>© 2025 Bounce — Todos los derechos reservados</footer>
+<h2>7. Retención y eliminación de datos</h2>
+<p>El usuario puede eliminar su cuenta y todos sus datos asociados en cualquier momento cerrando sesión desde la pantalla de perfil. Para solicitar la eliminación completa de los datos almacenados en Firebase, el usuario puede contactar con el desarrollador en la dirección indicada a continuación.</p>
+
+<h2>8. Menores de edad</h2>
+<p>Bounce es apto para todas las edades. No recopilamos datos personales de forma intencionada de menores de 13 años. El uso de cuenta con Google requiere que el usuario cumpla los requisitos de edad de Google.</p>
+
+<h2>9. Contacto</h2>
+<p>Para cualquier consulta sobre privacidad o solicitud de eliminación de datos: <a href="mailto:srspecialk@gmail.com">srspecialk@gmail.com</a></p>
+
+<footer>© 2026 Bounce — Todos los derechos reservados</footer>
 </body>
 </html>
